@@ -11,8 +11,11 @@ const Home: NextPage<{
   source: MDXRemoteSerializeResult<Record<string, unknown>>;
 }> = ({ source }) => {
   return (
-    <div>
-      <MDXRemote {...source} />
+    <div className="w-full flex justify-center">
+      <article className="prose lg:prose-xl">
+        <h1>Test</h1>
+        <MDXRemote {...source} />
+      </article>
     </div>
   );
 };
